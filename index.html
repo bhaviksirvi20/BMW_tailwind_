@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Project</title>
+  <link rel="shortcut icon"
+    href="https://www.bmw.in/content/dam/bmw/common/images/logo-icons/BMW/BMW_White_Logo.svg.asset.1670245093434.svg"
+    type="image/x-icon" />
+  <link rel="stylesheet" href="input.css" />
+  <link rel="stylesheet" href="output.css" />
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link href="https://db.onlinewebfonts.com/c/ac95f91c55cc591ecf37a4d136ff8031?family=BMWTypeNext+Pro+Regular"
+    rel="stylesheet" />
+</head>
+<style>
+  * {
+    font-family: "BMWTypeNext Pro Regular";
+    scroll-behavior: smooth;
+  }
+</style>
+
+<body>
+  <!-- section 1 -->
+  <div class="relative w-full h-screen overflow-hidden">
+    <!-- Background Video -->
+    <video class="absolute top-0 left-0 w-full h-full object-cover z-0" autoplay loop muted>
+      <source src="./src/document_6116364361029128429.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- top Shadow -->
+    <div class="absolute inset-x-0 top-0 h-[500px] sm:h-52 bg-gradient-to-b from-black to-transparent"></div>
+
+    <!-- Bottom Shadow -->
+    <div class="absolute inset-x-0 bottom-0 h-[500px] sm:h-52 bg-gradient-to-t from-black to-transparent"></div>
+
+    <!-- Left Shadow -->
+    <div class="absolute inset-y-0 left-0 w-[1000px]  bg-gradient-to-r from-transparent sm:from-black to-transparent">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="absolute top-0 left-0 w-full bg-opacity-50 z-10">
+      <div class="h-auto mx-auto w-full container border-b-2 border-white flex justify-between items-center">
+        <div class="navl text-white pt-2 px-2 flex justify-between items-center gap-8">
+          <img
+            src="https://www.bmw.in/content/dam/bmw/common/images/logo-icons/BMW/BMW_White_Logo.svg.asset.1670245093434.svg"
+            alt="" class="h-10 md:h-12 pb-1" />
+          <div class="gap-8 lg:flex justify-center items-center hidden">
+            <a href="#"
+              class="border-b-4 border-transparent hover:border-blue-500 h-14 flex justify-between items-center">Models</a>
+            <a href="#"
+              class="border-b-4 border-transparent hover:border-blue-500 h-14 flex justify-between items-center">Electric</a>
+            <a href="#"
+              class="border-b-4 border-transparent hover:border-blue-500 h-14 flex justify-between items-center">Configurator</a>
+            <a href="#"
+              class="border-b-4 border-transparent hover:border-blue-500 h-14 flex justify-between items-center">Visit
+              Online Shop</a>
+            <a href="#"
+              class="border-b-4 border-transparent hover:border-blue-500 h-14 flex justify-between items-center">More
+              BMW</a>
+          </div>
+        </div>
+        <div class="navr flex gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50"
+            class="border-b-4 border-transparent hover:border-blue-500 h-16">
+            <path fill="#fff"
+              d="M25.1 42c-9.4 0-17-7.6-17-17s7.6-17 17-17s17 7.6 17 17s-7.7 17-17 17m0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15s15-6.7 15-15s-6.8-15-15-15" />
+            <path fill="#fff"
+              d="m15.3 37.3l-1.8-.8c.5-1.2 2.1-1.9 3.8-2.7s3.8-1.7 3.8-2.8v-1.5c-.6-.5-1.6-1.6-1.8-3.2c-.5-.5-1.3-1.4-1.3-2.6c0-.7.3-1.3.5-1.7c-.2-.8-.4-2.3-.4-3.5c0-3.9 2.7-6.5 7-6.5c1.2 0 2.7.3 3.5 1.2c1.9.4 3.5 2.6 3.5 5.3c0 1.7-.3 3.1-.5 3.8c.2.3.4.8.4 1.4c0 1.3-.7 2.2-1.3 2.6c-.2 1.6-1.1 2.6-1.7 3.1V31c0 .9 1.8 1.6 3.4 2.2c1.9.7 3.9 1.5 4.6 3.1l-1.9.7c-.3-.8-1.9-1.4-3.4-1.9c-2.2-.8-4.7-1.7-4.7-4v-2.6l.5-.3s1.2-.8 1.2-2.4v-.7l.6-.3c.1 0 .6-.3.6-1.1c0-.2-.2-.5-.3-.6l-.4-.4l.2-.5s.5-1.6.5-3.6c0-1.9-1.1-3.3-2-3.3h-.6l-.3-.5c0-.4-.7-.8-1.9-.8c-3.1 0-5 1.7-5 4.5c0 1.3.5 3.5.5 3.5l.1.5l-.4.5c-.1 0-.3.3-.3.7c0 .5.6 1.1.9 1.3l.4.3v.5c0 1.5 1.3 2.3 1.3 2.4l.5.3v2.6c0 2.4-2.6 3.6-5 4.6c-1.1.4-2.6 1.1-2.8 1.6" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            class="border-b-4 border-transparent hover:border-blue-500 h-16">
+            <path fill="#fff"
+              d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1m-9-1a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1M18 6H4.27l2.55 6H15c.33 0 .62-.16.8-.4l3-4c.13-.17.2-.38.2-.6a1 1 0 0 0-1-1m-3 7H6.87l-.77 1.56L6 15a1 1 0 0 0 1 1h11v1H7a2 2 0 0 1-2-2a2 2 0 0 1 .25-.97l.72-1.47L2.34 4H1V3h2l.85 2H18a2 2 0 0 1 2 2c0 .5-.17.92-.45 1.26l-2.91 3.89c-.36.51-.96.85-1.64.85" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            class="border-b-4 border-transparent hover:border-blue-500 h-16">
+            <path fill="#fff"
+              d="M4.24 12.25a4.2 4.2 0 0 1-1.24-3A4.25 4.25 0 0 1 7.25 5c1.58 0 2.96.86 3.69 2.14h1.12A4.24 4.24 0 0 1 15.75 5A4.25 4.25 0 0 1 20 9.25c0 1.17-.5 2.25-1.24 3L11.5 19.5zm15.22.71C20.41 12 21 10.7 21 9.25A5.25 5.25 0 0 0 15.75 4c-1.75 0-3.3.85-4.25 2.17A5.22 5.22 0 0 0 7.25 4A5.25 5.25 0 0 0 2 9.25c0 1.45.59 2.75 1.54 3.71l7.96 7.96z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 50 50 "
+            class="hidden lg:block border-b-4 border-transparent hover:border-blue-500 h-16">
+            <path fill="#fff"
+              d="m25 42.5l-.8-.9C23.7 41.1 12 27.3 12 19c0-7.2 5.8-13 13-13s13 5.8 13 13c0 8.3-11.7 22.1-12.2 22.7zM25 8c-6.1 0-11 4.9-11 11c0 6.4 8.4 17.2 11 20.4c2.6-3.2 11-14 11-20.4c0-6.1-4.9-11-11-11" />
+            <path fill="#fff"
+              d="M25 24c-2.8 0-5-2.2-5-5s2.2-5 5-5s5 2.2 5 5s-2.2 5-5 5m0-8c-1.7 0-3 1.3-3 3s1.3 3 3 3s3-1.3 3-3s-1.3-3-3-3" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            class="flex lg:hidden border-b-4 border-transparent hover:border-blue-500 h-16">
+            <path fill="#fff"
+              d="M3.75 6.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75m0 5.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75m0 5.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Centered Black Background Div -->
+    <div class="absolute bottom-0 h-[93vh] flex items-end xl:flex xl:items-center left-0 w-full bg-opacity-70 z-10">
+
+      <div class="h-auto container mx-auto flex xl:justify-start justify-center xl:items-start items-center py-8">
+        <div class="text-center text-white xl:text-left">
+          <h2 class="text-md tracking-[3px] lg:text-3xl xl:text-4xl">THE</h2>
+          <h1 class="text-5xl lg:text-9xl xl:text-[200px]">X3</h1>
+          <h2 class="text-lg mt-2 lg:text-3xl xl:text-4xl">LONG WHEELBASE</h2>
+          <h3 class="font-medium text-lg mt-2 lg:text-xl xl:text-2xl xl:mt-10">
+            Introductory Price of &nbsp; $ 75,80,000
+          </h3>
+          <button
+            class="h-auto w-72 sm:full mt-4 bg-blue-500 hover:bg-white hover:text-blue-500 hover:border-2 hover:border-blue-500 border-2 border-transparent duration-500 px-2 py-1 rounded-sm md:text-xl md:px-8 md:py-2 lg:text-2xl lg:px-10 lg:py-3 lg:mt-6">
+            Discover now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section 2 -->
+  <div class="h-full py-12 container mx-auto">
+    <p class="text-4xl sm:text-5xl pb-8 mx-auto flex justify-center items-center">
+      Find your BMW.
+    </p>
+    <div class="h-auto mx-auto mt-5 col grid grid-cols-1 lg:grid-cols-3 lg:flex-col md:gap-10">
+      <div class="card text-center flex flex-col  justify-center mt-5 md:mt-0 items-center w-full">
+        <div class="h-auto w-full  py-5  px-9">
+          <div class="h-auto w-auto flex justify-center items-center">
+            <img
+              src="https://images.netdirector.co.uk/gforces-auto/image/upload/w_180,h_135,q_auto,c_fill,f_auto,fl_lossy/auto-titan/a876765b525a5c3046cefecff6af6970/microsoftteams_image_8_.png"
+              alt="" class="h-26 w-32" />
+          </div>
+
+          <p class="text-3xl mt-5">Find a new car.</p>
+          <button
+            class="h-auto w-full xl:w-80 md:w-full text-xl hover:bg-black hover:text-white duration-500 mt-8 border px-6 py-3 rounded-sm">
+            Search now
+          </button>
+        </div>
+      </div>
+      <div class="card text-center flex flex-col justify-center mt-10 md:mt-0 items-center w-full">
+        <div class="h-auto w-full  p-5">
+          <div class="h-auto w-auto flex justify-center items-center">
+            <img
+              src="https://images.netdirector.co.uk/gforces-auto/image/upload/w_180,h_135,q_auto,c_fill,f_auto,fl_lossy/auto-titan/2c3a06f266b5c9da40f10294690b7f2b/microsoftteams_image_7_.png"
+              alt="" class="h-26 w-32" />
+          </div>
+
+          <p class="text-3xl mt-5">Book a test drive.</p>
+          <button
+            class="h-auto w-full xl:w-80  text-xl hover:bg-black hover:text-white duration-500 mt-8 border  px-6 py-3 rounded-sm">
+            Request a test drive
+          </button>
+        </div>
+      </div>
+      <div class="card text-center flex flex-col  justify-center mt-10 md:mt-0 items-center w-full">
+        <div class="h-auto w-full  py-5  px-9">
+          <div class="h-auto w-auto flex justify-center items-center">
+            <img
+              src="https://images.netdirector.co.uk/gforces-auto/image/upload/w_180,h_135,q_auto,c_fill,f_auto,fl_lossy/auto-titan/b02c5326c760e99f3e710f9a089694c1/microsoftteams_image_9_.png"
+              alt="" class="h-26 w-32" />
+          </div>
+
+          <p class="text-3xl mt-5">Build your own.</p>
+          <button
+            class="h-auto w-full xl:w-80 md:w-full text-xl hover:bg-black hover:text-white duration-500 mt-8 border  px-6 py-3 rounded-sm">
+            Configure & Price
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section 3 -->
+  <div class="relative w-full h-screen overflow-hidden">
+    <video class="absolute top-0 left-0 w-full h-full object-cover z-0" autoplay loop muted>
+      <source src="./src/video6118616160842813726.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <!-- Bottom Shadow -->
+    <div class="absolute inset-x-0 bottom-0 h-[500px] sm:h-52 bg-gradient-to-t from-black to-transparent"></div>
+
+    <!-- Left Shadow -->
+    <div class="absolute inset-y-0 left-0 w-[1000px]  bg-gradient-to-r from-transparent sm:from-black to-transparent">
+    </div>
+
+    <!-- Centered Black Background Div -->
+
+    <div class="absolute bottom-0 h-[93vh] flex items-end xl:flex xl:items-center left-0 w-full bg-opacity-70 z-10">
+
+      <div class="h-auto container mx-auto flex xl:justify-start justify-center xl:items-start items-center py-8">
+        <div class="text-center text-white xl:text-left">
+          <h2 class="text-md tracking-[3px] lg:text-3xl xl:text-4xl">THE</h2>
+          <h1 class="text-5xl lg:text-9xl xl:text-[200px]">5</h1>
+          <h2 class="text-lg mt-2 lg:text-3xl xl:text-4xl">LONG WHEELBASE</h2>
+          <h3 class="font-medium text-lg mt-2 lg:text-xl xl:text-2xl xl:mt-10">
+            Introductory Price of &nbsp; $ 72,90,000
+          </h3>
+          <button
+            class="h-auto w-72 sm:full mt-4 bg-transparent hover:bg-white hover:text-black hover:border-2 hover:border-white border-2 border-white duration-500 px-2 py-1 rounded-sm md:text-xl md:px-8 md:py-2 lg:text-2xl lg:px-10 lg:py-3 lg:mt-6">
+            Discover now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section 4 -->
+  <div class="grid grid-rows-3 gap-4 lg:gap-8 xl:gap-14 pt-4 lg:pt-8 xl:pt-14">
+
+    <!-- car 1 -->
+    <div class="relative overflow-hidden h-[70vh] bg-center bg-cover
+    bg-[url('https://bmw.scene7.com/is/image/BMW/iX:1to1?fmt=webp&wid=600&hei=600')] 
+    md:bg-[url('https://bmw.scene7.com/is/image/BMW/iX:3to1?fmt=webp&wid=1504&hei=501')] ">
+
+
+      <!-- Bottom Shadow -->
+      <div class="absolute inset-x-0 bottom-0 h-[500px] sm:h-52 bg-gradient-to-t from-black to-transparent"></div>
+
+      <!-- Left Shadow -->
+      <div class="absolute inset-y-0 left-0 w-[500px]  bg-gradient-to-r from-transparent sm:from-black to-transparent">
+      </div>
+
+      <div class=" h-[70vh] flex items-end lg:flex lg:items-center left-0 w-full bg-opacity-70 z-10">
+        <div
+          class="h-auto container mx-auto z-20 flex lg:justify-start justify-center lg:items-center items-center py-8">
+          <div class=" text-center text-white lg:text-left">
+
+            <h2 class="text-lg md:text-3xl lg:text-6xl">BMW iX xDrive50.</h2>
+            <h3 class="font-medium text-lg mt-2 md:text-xl lg:text-3xl lg:mt-10">
+              Stay ahead of the curve.
+            </h3>
+
+            <button
+              class="h-auto w-72 sm:full mt-4 bg-transparent hover:bg-white hover:text-black border-2 border-white duration-500 px-2 py-1 rounded-sm md:text-xl md:px-8 md:py-2 lg:text-2xl lg:px-10 lg:py-3 lg:mt-6">
+              Discover now
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <!-- car 2 -->
+    <div class="relative overflow-hidden h-[70vh] bg-center bg-cover 
+    bg-[url('https://bmw.scene7.com/is/image/BMW/DI21_000048047_3000_3000:1to1?fmt=webp&wid=600&hei=600')] 
+    md:bg-[url('https://bmw.scene7.com/is/image/BMW/DI21_000048047_3000_3000:3to1?fmt=webp&wid=2560&hei=853')] ">
+
+
+      <!-- Bottom Shadow -->
+      <div class="absolute inset-x-0 bottom-0 h-[500px] bg-gradient-to-t from-black to-transparent"></div>
+
+
+
+      <div class=" h-[70vh]  flex items-end lg:flex lg:items-center left-0 w-full bg-opacity-70 z-10">
+        <div class="h-[70vh] container mx-auto z-20 flex lg:justify-start justify-center lg:items-end items-end py-8">
+          <div class=" text-center text-white lg:text-left">
+
+            <h2 class="text-lg mt-2 md:text-3xl lg:text-6xl">This is forwardism: The 7.</h2>
+
+            <button
+              class="h-auto w-72 sm:full mt-4 bg-transparent hover:bg-white mb-0 lg:mb-10 hover:text-black border-2 border-white duration-500 px-2 py-1 rounded-sm md:text-xl md:px-8 md:py-2 lg:text-2xl lg:px-10 lg:py-3 lg:mt-14 ">
+              Know more
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- car 3 -->
+    <div class="relative overflow-hidden h-[70vh] bg-center bg-cover 
+    bg-[url('https://bmw.scene7.com/is/image/BMW/iX_Banner1:1to1?fmt=webp&wid=600&hei=600')] 
+    md:bg-[url('https://bmw.scene7.com/is/image/BMW/iX_Banner1:3to1?fmt=webp&wid=2560&hei=853')]">
+
+
+      <!-- Bottom Shadow -->
+      <div class="absolute inset-x-0 bottom-0 h-[500px] bg-gradient-to-t from-black to-transparent"></div>
+
+
+
+      <div class=" h-[70vh]  flex items-end lg:flex lg:items-center left-0 w-full bg-opacity-70 z-10">
+        <div class="h-[70vh] container mx-auto z-20 flex lg:justify-start justify-center lg:items-end items-end py-8">
+          <div class=" text-center text-white lg:text-left">
+
+            <h2 class="text-lg mt-2 md:text-3xl lg:text-6xl">The iX: The joy of electric driving.</h2>
+            <h3 class="font-lighter sm:font-medium  text-sm mt-2 md:text-xl lg:text-3xl lg:mt-10">
+              100 % electric. 100 % driving pleasure. 100 % BMW.
+            </h3>
+            <h3 class="font-lighter sm:font-medium  text-sm mt-2 md:text-xl lg:text-3xl">
+              Experience an entirely new sensation of sheer driving pleasure.
+            </h3>
+            <button
+              class="h-auto w-72 sm:full mt-4 bg-transparent hover:bg-white mb-0 lg:mb-10 hover:text-black border-2 border-white duration-500 px-2 py-1 rounded-sm md:text-xl md:px-8 md:py-2 lg:text-2xl lg:px-10 lg:py-3 lg:mt-14 ">
+              Know more
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- car 4 -->
+    <div class="container mx-auto py-4 xl:py-2">
+      <div class="grid grid-cols-1 xl:grid-cols-2 items-center">
+        <!-- Image Section -->
+        <div class="flex justify-center">
+          <img
+            src="https://www.bmw.in/en/index/_jcr_content/root/maincontent/contentblueprint_1532906499/contentblueprint/contentblueprint/image.coreimg.jpeg/1725636281324/homepage-specialoffers.jpeg"
+            alt="BMW Special Offers" class="rounded-lg shadow-lg w-full md:w-[700px] lg:w-[800px] xl:w-[1000px]">
+        </div>
+
+        <!-- Text Section -->
+        <div class="text-center px-20 mt-8 xl:mt-0 xl:text-left">
+          <h2 class="text-3xl md:text-5xl font-semibold text-gray-900">BMW Special Offers.</h2>
+          <p class="text-2xl text-gray-700 mt-6">
+            Monthly EMI starting from Rs. <strong>49,999</strong>*/Month. <br>
+            Check out similar BMW finance <br> offers available across the BMW range.
+          </p>
+
+          <!-- Know More Button with Arrow Icon -->
+          <a href="#"
+            class="inline-flex items-center gap-2 mt-6 text-black font-semibold text-2xl transition-colors duration-150 hover:text-blue-500">
+            Know more
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"
+              class="transition-colors duration-75">
+              <path fill="currentColor"
+                d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1l-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- extra -->
+    <div class="border-t-2 border-gray-100 py-10">
+      <div class="container mx-auto items-center">
+        <div class="sm:flex justify-start grid grid-cols-1 pl-12 sm:pl-0 xl:grid-cols-2 gap-4 sm:gap-10">
+          <h2 class="inline-flex items-center gap-2 text-black font-lighter text-xl">FIND YOUR BMW</h2>
+
+          <a href="#"
+            class="inline-flex items-center gap-2 text-black font-semibold text-2xl transition-colors duration-150 hover:text-blue-500">
+            All Models
+
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer  -->
+  <div class="bg-gray-100 ">
+    <div class="container mx-auto flex gap-10 flex-col ">
+      <div class="grid grid-cols-1 pt-32 md:grid-cols-2 xl:grid-cols-4 gap-14 sm:gap-18">
+        <div class="flex flex-col px-5 gap-8">
+          <div class="flex flex-col items-center md:items-start">
+            <h2 class="inline-flex items-center  text-black font-lighter text-lg">Contact</h2>
+
+          </div>
+          <div class="flex flex-col justify-between gap-6 items-center md:items-start">
+            <a href="#"
+              class="group relative inline-flex items-center text-gray-800 font-semibold text-2xl transition-all hover:text-blue-500 hover:ml-2">
+              Find a Dealer
+              <span
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#"
+              class="group relative inline-flex items-center text-gray-800 font-semibold text-2xl transition-all hover:text-blue-500 hover:ml-2">
+              Request a Test Drive
+              <span
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#"
+              class="group relative inline-flex items-center  text-gray-800 hover:ml-2 duration-150  font-semibold text-2xl transition-colors hover:text-blue-500">
+              Careers
+              <span
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#"
+              class="group relative inline-flex items-center  text-gray-800 hover:ml-2 duration-150  font-semibold text-2xl transition-colors hover:text-blue-500">
+              Contact Us
+              <span
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </div>
+
+        </div>
+        <div class="flex flex-col px-5 gap-8">
+          <div class="flex flex-col items-center md:items-start">
+            <h2 class="inline-flex items-center  text-black font-lighter text-lg">Quick Links</h2>
+
+          </div>
+          <div class=" flex flex-col justify-between gap-6 items-center md:items-start">
+            <a href="#"
+              class="group relative inline-flex items-center  text-gray-800 hover:ml-2 duration-150  font-semibold text-2xl transition-colors hover:text-blue-500">
+              Build your BMW
+              <span
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#"
+              class="group relative inline-flex items-center  text-gray-800 hover:ml-2 duration-150  font-semibold text-2xl transition-colors hover:text-blue-500">
+              BMW Financial Services
+              <span
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#"
+              class="group relative inline-flex items-center  text-gray-800 hover:ml-2 duration-150  font-semibold text-2xl transition-colors hover:text-blue-500">
+              BMW Safety
+              <span
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#"
+              class="group relative inline-flex items-center  text-gray-800 hover:ml-2 duration-150  font-semibold text-2xl transition-colors hover:text-blue-500">
+              BMW Premium Selection (Used Cars)
+              <span
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </div>
+
+        </div>
+        <div class="flex flex-col px-5 gap-8">
+          <div class="flex flex-col items-center md:items-start">
+            <h2 class="inline-flex items-center  text-black font-lighter text-lg">Experience BMW</h2>
+
+          </div>
+          <div class=" flex flex-col justify-between gap-6 items-center md:items-start">
+            <a href="#"
+              class="group relative inline-flex items-center  text-gray-800 hover:ml-2 duration-150  font-semibold text-2xl transition-colors hover:text-blue-500">
+              BMW Group
+              <span
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#"
+              class="group relative inline-flex items-center  text-gray-800 hover:ml-2 duration-150  font-semibold text-2xl transition-colors hover:text-blue-500">
+              BMW Excellence Club
+              <span
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#"
+              class="group relative inline-flex items-center  text-gray-800 hover:ml-2 duration-150  font-semibold text-2xl transition-colors hover:text-blue-500">
+              BMW Motorrad
+              <span
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#"
+              class="group relative inline-flex items-center  text-gray-800 hover:ml-2 duration-150  font-semibold text-2xl transition-colors hover:text-blue-500">
+              Charging Network
+              <span
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </div>
+
+        </div>
+        <div class="flex flex-col px-5 gap-8">
+          <div class="flex flex-col items-center md:items-start">
+            <h2 class="inline-flex items-center  text-black font-lighter text-lg">Legal</h2>
+
+          </div>
+          <div class=" flex flex-col justify-between gap-6 items-center md:items-start">
+            <a href="#"
+              class="group relative inline-flex items-center  text-gray-800 hover:ml-2 duration-150  font-semibold text-2xl transition-colors hover:text-blue-500">
+              Legal Disclaimer/Imprint
+              <span
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#"
+              class="group relative inline-flex items-center  text-gray-800 hover:ml-2 duration-150  font-semibold text-2xl transition-colors hover:text-blue-500">
+              Privacy Policy
+              <span
+                class="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="icons flex gap-8 h-32 mt-5 justify-center xl:justify-start items-center">
+        <a href="https://www.facebook.com/bmwindia" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" 
+            width="30" height="30" viewBox="0 0 486.037 1000">
+            <path fill="#000"
+              d="M124.074 1000V530.771H0V361.826h124.074V217.525C124.074 104.132 197.365 0 366.243 0C434.619 0 485.18 6.555 485.18 6.555l-3.984 157.766s-51.564-.502-107.833-.502c-60.9 0-70.657 28.065-70.657 74.646v123.361h183.331l-7.977 168.945H302.706V1000z" />
+          </svg></a>
+        <a href="https://www.instagram.com/bmwindia_official/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+            width="30" height="30" viewBox="0 0 24 24">
+            <path fill="#000"
+              d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+          </svg></a>
+        <a href="https://www.youtube.com/user/bmwindia" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+            width="30" height="30" viewBox="0 0 24 24">
+            <path fill="#000" fill-rule="evenodd"
+              d="M22.54 6.42a2.77 2.77 0 0 0-1.945-1.957C18.88 4 12 4 12 4s-6.88 0-8.595.463A2.77 2.77 0 0 0 1.46 6.42C1 8.148 1 11.75 1 11.75s0 3.602.46 5.33a2.77 2.77 0 0 0 1.945 1.958C5.121 19.5 12 19.5 12 19.5s6.88 0 8.595-.462a2.77 2.77 0 0 0 1.945-1.958c.46-1.726.46-5.33.46-5.33s0-3.602-.46-5.33M9.75 8.479v6.542l5.75-3.271z"
+              clip-rule="evenodd" />
+          </svg></a>
+        <a href="https://www.linkedin.com/company/bmw-india" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+            width="30" height="30" viewBox="0 0 24 24">
+            <path fill="#000"
+              d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />
+          </svg></a>
+        <a href="https://x.com/bmwindia" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+            viewBox="0 0 24 24">
+            <path fill="#000"
+              d="m17.687 3.063l-4.996 5.711l-4.32-5.711H2.112l7.477 9.776l-7.086 8.099h3.034l5.469-6.25l4.78 6.25h6.102l-7.794-10.304l6.625-7.571zm-1.064 16.06L5.654 4.782h1.803l10.846 14.34z" />
+          </svg></a>
+      </div>
+
+    </div>
+  </div>
+
+  <div>
+    <div class="container mx-auto flex gap-10 flex-col ">
+      <div class="grid grid-cols-1 justify-between py-10 xl:grid-cols-2 gap-10">
+        <div class="flex flex-col items-center justify-center xl:items-start">
+          <h2 class="inline-flex items-center  text-black font-lighter text-2xl">© BMW AG 2025</h2>
+
+        </div>
+        <div
+          class="flex gap-2 flex-col md:flex-row md:gap-12 justify-center  xl:justify-end  items-center md:items-start">
+          <a href="#"
+            class="inline-flex items-center  text-gray-800 duration-150  font-semibold text-lg transition-colors hover:text-blue-500">
+            Legal Disclaimer/Imprint </a>
+          <a href="#"
+            class="inline-flex items-center  text-gray-800 duration-150  font-semibold text-lg transition-colors hover:text-blue-500">
+            Privacy Policy </a>
+          <a href="#"
+            class="inline-flex items-center  text-gray-800 duration-150  font-semibold text-lg transition-colors hover:text-blue-500">
+            Contact Us </a>
+
+        </div>
+
+
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+</body>
+
+</html>
